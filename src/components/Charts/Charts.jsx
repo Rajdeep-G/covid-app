@@ -3,7 +3,7 @@ import React from "react";
 const Charts = () => {
   return (
     <div>
-      <h1>Charts</h1>
+      <h1>Chartsaaa</h1>
     </div>
   );
 };
