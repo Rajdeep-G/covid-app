@@ -1,5 +1,6 @@
 body {
-  /* background-color: aqua; */
+  /* background-color: black; */
+  /* opacity: 0.6; */
 }
 
 .container {
@@ -8,17 +9,23 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
 .image {
   width: 370px;
   margin-top: 50px;
 }
-@media(max-width: 770px){
-    .container{
-        margin:0 10%;
-    }
 
-    .image{
-        width:100%
-    }
+.image {
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }
+@media (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  
+}
+/* .test{
+  border:1px solid red;
+  /* opacity: 0.1;/ */
