@@ -1,11 +1,13 @@
 import React from "react";
-
 import { Cards, Charts, CountryPicker } from "./components";
 import styles from "./App.module.css";
-
 import { fetchData } from "./api";
-
 import corona from "./images/1.png";
+import heart from "./images/heart.svg";
+import gmail from "./images/gmail.svg";
+import linkedin from "./images/lnn.svg";
+import github from "./images/github2.svg";
+
 class App extends React.Component {
   state = {
     country: "",
@@ -26,11 +28,42 @@ class App extends React.Component {
     return (
       <div>
         <div className={styles.container}>
-          <div className={styles.image}><img src={corona} /></div>
+          <div className={styles.image}>
+            <img src={corona} />
+          </div>
           {/* <div className={styles.test}>COVID19</div> */}
           <Cards data={data} />
-          <Charts data={data} country={country} />
+
           <CountryPicker handleCountryChange={this.handleCountryChange} />
+          <Charts data={data} country={country} />
+          {/* <Footer /> */}
+        </div>
+        <div className={styles.footer}>
+          Made with love{" "}
+          <div className={styles.heart}>
+            <img src={heart} />
+          </div>
+          by Rajdeep Ghosh
+        </div>
+        <div className={styles.contact}>
+          <div className={styles.g}>
+            <div>ghoshrajdeep2000@gmail.com</div>
+            <div>
+              <img className={styles.gmail} src={gmail} />
+            </div>
+          </div>
+          <div className={styles.g}>
+            <div>Github</div>
+            <div>
+              <img className={styles.gmail} src={github} />
+            </div>
+          </div>
+          <div className={styles.g}>
+            <div>Linkedin</div>
+            <div>
+              <img className={styles.gmail} src={linkedin} />
+            </div>
+          </div>
         </div>
       </div>
     );

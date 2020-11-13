@@ -11,7 +11,7 @@
 }
 
 .infected {
-  border-bottom: 10px solid rgba(61, 52, 235,0.8);
+  border-bottom: 10px solid rgba(18, 18, 241, 0.8);
   border-radius: 5px;
 }
 .infected:hover{
