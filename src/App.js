@@ -20,7 +20,7 @@ class App extends React.Component {
       <div>
         <div className={styles.container}>
           <Cards data={data} />
-          <Charts />
+          <Charts data={data}/>
           <CountryPicker />
         </div>
       </div>
