@@ -45,25 +45,44 @@ class App extends React.Component {
           </div>
           by Rajdeep Ghosh
         </div>
+
         <div className={styles.contact}>
-          <div className={styles.g}>
-            <div>ghoshrajdeep2000@gmail.com</div>
-            <div>
-              <img className={styles.gmail} src={gmail} />
+          <a
+            href="mailto:ghoshrajdeep2000@gmail.com"
+            style={{ color: "#FFF" }}
+            target="_blank"
+          >
+            <div className={styles.g}>
+              <div>ghoshrajdeep2000@gmail.com</div>
+              <div>
+                <img className={styles.gmail} src={gmail} />
+              </div>
             </div>
-          </div>
-          <div className={styles.g}>
-            <div>Github</div>
-            <div>
-              <img className={styles.gmail} src={github} />
+          </a>
+          <a
+            href="https://github.com/Rajdeep-G"
+            style={{ color: "#FFF" }}
+            target="_blank"
+          >
+            <div className={styles.g}>
+              <div>Github</div>
+              <div>
+                <img className={styles.gmail} src={github} />
+              </div>
             </div>
-          </div>
-          <div className={styles.g}>
-            <div>Linkedin</div>
-            <div>
-              <img className={styles.gmail} src={linkedin} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rajdeep-ghosh2000rg/"
+            style={{ color: "#FFF" }}
+            target="_blank"
+          >
+            <div className={styles.g}>
+              <div>Linkedin</div>
+              <div>
+                <img className={styles.gmail} src={linkedin} />
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     );
